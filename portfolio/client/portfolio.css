@@ -1,1 +1,4 @@
-/* CSS declarations go here */
+/* Algemene CSS */
+.page-header {
+	border-bottom: none !important;
+}

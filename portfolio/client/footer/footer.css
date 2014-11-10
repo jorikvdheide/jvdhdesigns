@@ -2,4 +2,11 @@ footer {
 	background-color: #323a45;
 	min-width: 100%;
 	min-height: 100px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	padding: 23px;
+}
+
+footer a {
+	color: #8a959e;
 }

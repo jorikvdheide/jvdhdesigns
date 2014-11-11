@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 mrt:moment
 jquery-ui
@@ -16,4 +15,4 @@ autoupdate
 natestrauser:font-awesome
 accounts-base
 accounts-password
-
+yogiben:admin

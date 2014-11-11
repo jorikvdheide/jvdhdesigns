@@ -2,3 +2,9 @@
 .page-header {
 	border-bottom: none !important;
 }
+
+header {
+	background-image: url('/img/latest-features.jpg');
+	min-height: 500px;
+	background-size: 100%;
+}

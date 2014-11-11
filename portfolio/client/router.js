@@ -17,3 +17,8 @@ Router.route('/about', function () {
   this.render('about');
   this.layout('layout');
 });
+
+Router.route('/contact', function () {
+  this.render('contact');
+  this.layout('layout');
+});

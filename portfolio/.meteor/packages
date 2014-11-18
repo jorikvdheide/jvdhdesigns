@@ -14,7 +14,9 @@ aldeed:autoform
 autoupdate
 natestrauser:font-awesome
 accounts-base
-accounts-password
 yogiben:admin
 alanning:roles
+accounts-ui
+accounts-password
+ryw:blog
 

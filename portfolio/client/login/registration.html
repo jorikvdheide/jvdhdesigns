@@ -1,0 +1,42 @@
+<template name="registration">
+	<div class="container">
+		{{#if currentUser}}
+			{{> dashboard}}
+			{{else}}
+				<div class="col-sm-6">
+					{{> register}}
+				</div>
+				<div class="col-sm-6">
+					{{> login}}
+				</div>
+		{{/if}}
+	</div>
+</template>
+
+<template name="register">
+	<h3>Registreren</h3>
+	<form>
+		<div class="form-group">
+			<input type="email" id="email" class="form-control input-lg" placeholder="Enter email">
+		</div>
+		<div class="form-group">
+		<input type="password" id="password" class="form-control input-lg" placeholder="Enter password">
+		</div>
+		<input type="submit" id="Registreren" class="btn btn-default">
+	</form>
+
+</template>
+
+<template name="login">
+	<h3>Inloggen</h3>
+	<form>
+		<div class="form-group">
+			<input type="email" id="login-email" class="form-control input-lg" placeholder="Enter email">
+		</div>
+		<div class="form-group">
+			<input type="password" id="login-password" class="form-control input-lg" placeholder="Enter password">
+		</div>
+		<input type="submit" id="Login" class="btn btn-default">
+	</form>
+
+</template>

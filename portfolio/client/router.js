@@ -18,7 +18,17 @@ Router.route('/about', function () {
   this.layout('layout');
 });
 
+Router.route('/blog', function () {
+  this.render('blog');
+  this.layout('layout');
+});
+
 Router.route('/contact', function () {
   this.render('contact');
+  this.layout('layout');
+});
+
+Router.route('/login', function () {
+  this.render('registration');
   this.layout('layout');
 });

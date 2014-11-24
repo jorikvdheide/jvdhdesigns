@@ -3,41 +3,6 @@
 		<h1>Portfolio <small>Page</small></h1>
 	</div>
 	<div class="container">
-		{{> portfolioItems}}
 
-		{{> projects}}
 	</div>
-</template>
-
-<template name="portfolioItems">
-	<h1>Nieuw portfolio item</h1>
-
-	<input type="button" value="newItem" class="newItem"/>
-
-	<div class="portfolio_form">
-		<input type="text" class="item_name" placeholder="Naam">
-		<input type="text" class="item_client" placeholder="Klant">
-		<input type="text" class="item_category" placeholder="Categorie">
-		<input type="submit" class="item_submit">
-	</div>
-</template>
-
-<template name="projects">
-	<table>
-		<tr>
-			<th>Naam</th>
-			<th>Klant</th>
-			<th>Categorie</th>
-			<th></th>
-		</tr>
-
-		{{#each projecten }}
-			<tr>
-				<th>{{naam}}</th>
-				<th>{{klant}}</th>
-				<th>{{categorie}}</th>
-				<th><a href="#" class="delete">Delete</a></th>
-			</tr>
-		{{/each}}
-	</table>
 </template>

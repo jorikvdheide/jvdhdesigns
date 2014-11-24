@@ -18,17 +18,31 @@ Router.route('/about', function () {
   this.layout('layout');
 });
 
-Router.route('/blog', function () {
-  this.render('blog');
-  this.layout('layout');
-});
-
 Router.route('/contact', function () {
   this.render('contact');
   this.layout('layout');
 });
 
-Router.route('/login', function () {
-  this.render('registration');
+Router.route('/dashboard', function () {
+  this.render('dashboard');
   this.layout('layout');
+});
+
+Router.configure({
+    layoutTemplate: 'layout'
+});
+
+Router.map(function() {
+    this.route('admin', {
+        path:'/admin',
+        template: 'accountsAdmin',
+        onBeforeAction: function() {
+            if (Meteor.loggingIn()) {
+                this.render(this.loadingTemplate);
+            } else if(!Roles.userIsInRole(Meteor.user(), ['admin'])) {
+                console.log('redirecting');
+                this.redirect('/');
+            }
+        }
+    });
 });

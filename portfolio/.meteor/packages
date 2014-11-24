@@ -14,9 +14,11 @@ aldeed:autoform
 autoupdate
 natestrauser:font-awesome
 accounts-base
-yogiben:admin
 alanning:roles
 accounts-ui
 accounts-password
+steeve:single-page-login
 ryw:blog
+mrt:accounts-admin-ui-bootstrap-3
+mrt:bootstrap-3
 

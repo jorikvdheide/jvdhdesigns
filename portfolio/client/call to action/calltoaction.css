@@ -1,0 +1,50 @@
+.calltoaction {
+	padding: 50px;
+	background-color: #323a45;
+	background-image: url('img/poly.png');
+	height: auto;
+	overflow: scroll;
+}
+
+.input-group .form-control:last-child {
+	height: 63px;
+	border: none;
+}
+
+.input-prepend {
+	height: 50px;
+}
+
+.calltoaction h2 {
+	font: 300 35px/52px "Open Sans", "open-sans", sans-serif;
+	color: #fff;
+	font-weight: lighter;
+	margin-bottom: 55px;
+}
+
+.calltoaction p {
+	font: 300 12px "Open Sans", "open-sans", sans-serif;
+	color: #747c83;
+	font-weight: lighter;
+	margin-bottom: 55px;
+	margin-top: 20px;
+}
+
+.btn-signupnewsletter {
+	height: 63px;
+	background-color: #f36;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: #fff;
+	font: 300 18px "Open Sans", "open-sans", sans-serif;
+	border: none;
+}
+
+.input-group-addon {
+	border-top-left-radius: 3px !important;
+	border-bottom-left-radius: 3px !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	background-color: #fff;
+	border: none;
+}

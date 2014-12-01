@@ -1,41 +1,33 @@
-Router.route('/', function () {
-  this.render('home');
-  this.layout('layout');
-});
-
-Router.route('/home', function () {
-  this.render('home');
-  this.layout('layout');
-});
-
-Router.route('/portfolio', function () {
-  this.render('portfolio');
-  this.layout('layout');
-});
-
-Router.route('/about', function () {
-  this.render('about');
-  this.layout('layout');
-});
-
-Router.route('/contact', function () {
-  this.render('contact');
-  this.layout('layout');
-});
-
-Router.route('/dashboard', function () {
-  this.render('dashboard');
-  this.layout('layout');
-});
-
-Router.configure({
+Router.map(function () {
+  this.route('home', {
+    path: '/',
+    layoutTemplate: 'homelayout',
+    yieldTemplates: {
+      'section1': {to: 'first'},
+      'section2': {to: 'second'},
+      'homeblog': {to: 'homeblog'},
+      'calltoaction': {to: 'calltoaction'}
+    }
+  });
+  this.route('portfolio', {
+    path: '/portfolio',
     layoutTemplate: 'layout'
-});
-
-Router.map(function() {
-    this.route('admin', {
+  });
+  this.route('about', {
+    path: '/about',
+    layoutTemplate: 'layout'
+  });
+  this.route('blog', {
+    path: '/blog',
+    layoutTemplate: 'layout'
+  });
+  this.route('contact', {
+    path: '/contact',
+    layoutTemplate: 'layout'
+  });
+  this.route('admin', {
         path:'/admin',
-        template: 'accountsAdmin',
+        template: 'admin',
         onBeforeAction: function() {
             if (Meteor.loggingIn()) {
                 this.render(this.loadingTemplate);

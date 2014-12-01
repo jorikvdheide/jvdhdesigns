@@ -1,0 +1,17 @@
+.homeheader {
+	background-image: url('img/home.jpg');
+	min-height: 500px;
+}
+
+.first {
+	min-height: 500px;
+}
+
+.second {
+	min-height: 500px;
+	background-color: #f9f9fa;
+}
+
+.homeblog {
+	min-height: 500px;
+}

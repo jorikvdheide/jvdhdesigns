@@ -1,5 +1,24 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 
+.nav-login {
+	background-color: #f36;
+	color: #fff;
+	border-radius: 3px;
+}
+
+.page-nav {
+	background-color: #fff !important;
+	border-bottom: solid 1px #e4e4e4 !important;
+}
+
+.page-nav .nav > li > a {
+	color: #8a959e !important;
+}
+
+.page-nav .nav > li > a:hover{
+	color: #f36 !important;
+}
+
 .navbar {
 	width: 100%;
 	font-family: 'Lato', sans-serif;
@@ -55,6 +74,23 @@
 }
 .opaque {
   opacity: 1;
-  background-color: #323a45;
+  background-color: #fff;
   transition: background-color .5s ease;
+  border-bottom: solid 1px #e4e4e4
+}
+
+.opaque .navbar-brand {
+	color: #8a959e;
+}
+
+.opaque .nav-login {
+	color: #fff !important;
+}
+
+.opaque .nav > li > a {
+	color: #8a959e;
+}
+
+.opaque .nav > li > a:hover {
+	color: #f36;
 }

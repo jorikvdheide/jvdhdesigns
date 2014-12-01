@@ -1,12 +1,16 @@
 footer {
-	background-color: #323a45;
+	background-color: #fff;
 	min-width: 100%;
-	min-height: 100px;
+	min-height: 300px;
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	padding: 23px;
+	padding: 40px;
 }
 
 footer a {
 	color: #8a959e;
+}
+
+footer ul {
+	list-style-type: none;
 }

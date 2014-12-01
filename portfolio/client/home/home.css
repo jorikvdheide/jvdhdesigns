@@ -1,0 +1,28 @@
+.welcome-message {
+	padding-top: 250px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.homeblog {
+	padding: 50px;
+}
+
+.homeblog h2 {
+	font: 300 35px/52px "Open Sans", "open-sans", sans-serif;
+	color: #323a45;
+}
+
+.homeblog p {
+	line-height: 1.8em;
+	color: #747c83;
+	font-family: 'Open Sans', open-sans, sans-serif;
+	font-size: 17px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+}

@@ -1,10 +1,41 @@
 <template name="layout">
-	<header>
-		{{> navigation}}
+	<header class="pageheader">
+		{{> pagenavigation}}
 	</header>
 	<div class="container main">
 		{{> yield}}
 	</div>
+	<div class="calltoaction">
+			{{> yield region='calltoaction'}}
+		</div>
+	<footer>
+		{{> footer}}
+	</footer>
+</template>
+
+<template name="homelayout">
+	<header class="homeheader">
+		{{> homenavigation}}
+		{{> welcome}}
+	</header>
+	<div class="first">
+		<div class="container">
+			{{> yield region='first'}}
+		</div>
+	</div>
+	<div class="second">
+		<div class="container">
+			{{> yield region='second'}}
+		</div>
+	</div>
+	<div class="homeblog">
+		<div class="container">
+			{{> yield region='homeblog'}}
+		</div>
+	</div>
+	<div class="calltoaction">
+			{{> yield region='calltoaction'}}
+		</div>
 	<footer>
 		{{> footer}}
 	</footer>
